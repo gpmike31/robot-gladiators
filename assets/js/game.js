@@ -21,14 +21,10 @@ var enemyAttack = 12;
 var fight = function(enemyName) {
   //repeat and execue as long as the enemy-robot is alive
   while(enemyHealth > 0) {
-    // place fight function code block
+    // ask player if they'd like to fight or run
+    var promptFight = window.prompt('Would you like to FIGHT or SKIP this battle? Enter "FIGHT" or "SKIP" to choose.');
   }
-  // Alert players that they are starting the round
-  window.alert("Welcome to Robot Gladiators!");
-
-  // ask player if they'd like to fight or run
-  var promptFight = window.prompt('Would you like to FIGHT or SKIP this battle? Enter "FIGHT" or "SKIP" to choose.');
-
+  
   // if player choses to fight, fight
   if (promptFight === "fight" || promptFight === "FIGHT") {
     // remove enemy's health by subtracting the amount set in the playerAttack variable
